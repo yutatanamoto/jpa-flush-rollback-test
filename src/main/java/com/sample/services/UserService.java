@@ -17,6 +17,6 @@ class UserService {
         User user = new User(null, firstName, lastName);
         userRepository.saveAndFlush(user);
         // ここで非検査例外発生
-         throw new RuntimeException();
+        throw new RuntimeException();
     }
 }
